@@ -17,19 +17,24 @@ void Print(char ch)
 int main()
 {
     // Scalar
-    int i = 0;
+    int i = 2;
     int a = 10;
-    cout << "adresa: " << &a << endl;
+    // cout << "adresa: " << &a << endl;
     int *ptr = &a;
-    cout<<"pointer"<<ptr<<endl;
-    char s[8]{"Hello"};
-    cout << s << endl;
-    cout << "Hello!" << endl;
-    cout << i << endl;
-    char ch = 'a';
-    bool flag = false;
-    float f = 1.283f;
-    double d = 521.342;
+    // cout << "pointer" << ptr << endl;
+    *ptr = 5;
+    // cout << a << endl;
+    // int b = *ptr;
+    // cout << b << endl;
+    
+    // char s[8]{"Hello"};
+    // cout << s << endl;
+    // cout << "Hello!" << endl;
+    // cout << i << endl;
+    // char ch = 'a';
+    // bool flag = false;
+    // float f = 1.283f;
+    // double d = 521.342;
 
     // Vector
     int arr1[5];
@@ -45,12 +50,23 @@ int main()
     // cin.getline(buff, 64, '\n');
     // cout << "Your name is: " << buff << endl;
 
-    int x, y;
-    cin >> x;
-    cin >> y;
-    int result = Add(x, y);
-    cout << result << endl;
+    // int x, y;
+    // cin >> x;
+    // cin >> y;
+    // int result = Add(x, y);
+    // cout << result << endl;
 
-    Print('#');
+    // Print('#');
+
+    int m,n,result;
+    cout<<"m="; cin>>m;
+    cout<<"n="; cin>>n;
+   // AddVal(&m,&n,&result);
+  //  cout<<"Suma"<<result<<endl;
+
+   // Swap(&m,&n);
+  //  cout<<m<<" "<<n<<endl;
+    Factorial(&m,&result);
+    cout<<"Factorial de "<<m<<" = "<<result;
     return 0;
 }
